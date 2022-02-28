@@ -1,45 +1,54 @@
-@keyframes sliding {
-    0% {
-        background-color: yellow;
-        left: 0;
-        top: 0;
-        transform: scale(0.5);
-    }
-    25% {
-        top: 200px;
-        background-color: red;
-        transform: scale(1);
-    }
-    50% {
-        top: 0;
-        background-color: yellow;
-        transform: scale(1);
-    }
-    75% {
-        top: 200px;
-        background-color: red;
-        transform: scale(0.5);
-    }
-    100% {
-        background-color: magenta;
-        left: 600px;
-        top: 0;
-        transform: scale(0.5);
-    }
+.login-container {
+    display: flex;
+    justify-content: center;
 }
 
-.stage {
-    width: 700px;
-    height: 300px;
-    background-color: lightskyblue;
+.login-form {
+    display: flex;
+    flex-direction: column;
 }
 
-.ball {
-    width: 100px;
-    height: 100px;
-    background-color: limegreen;
-    position: relative;
-    border-radius: 50%;
-    animation: sliding 2s ease-in-out 0.5s infinite alternate;
-    animation-play-state: running;
+.login-form input,
+button {
+    font-size: 1.3em;
+    margin-top: 15px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    border-radius: 5px;
 }
+
+.login-form button {
+    background-color: orange;
+    color: whitesmoke;
+    font-weight: 700;
+    border: 0;
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+
+/* .container {
+    height: 500px;
+    border: 2px dotted slateblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 3px dashed rebeccapurple;
+    font-size: 3em;
+} */
